@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "116404249551",
+    "firebase_url": "https://bitdevents-4a815.firebaseio.com",
+    "project_id": "bitdevents-4a815",
+    "storage_bucket": "bitdevents-4a815.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116404249551:android:93e7d062b7ebcfe1f468ba",
+        "android_client_info": {
+          "package_name": "com.example.bitdevents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116404249551-k2rr2hh8cf5p4doscutr2lgi2adrev4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bitdevents",
+            "certificate_hash": "3e69fe72bf399178d0a437e07a654c205bcd6618"
+          }
+        },
+        {
+          "client_id": "116404249551-84gves9mvkdirbcem8811vq0flrep0ks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqPYurtDdnRfbPT9M4R0Sg34omnT4wl5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116404249551-84gves9mvkdirbcem8811vq0flrep0ks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

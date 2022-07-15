@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/gradiant_ract"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Admin Dashboard"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="10dp"
+       >
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:columnCount="2"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addEventBtn"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_bg"
+                android:elevation="20dp"
+                android:shadowColor="@android:color/black"
+                android:text="Add New\nEvents"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorLink="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addStudentBtn"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_bg"
+                android:elevation="20dp"
+                android:shadowColor="@android:color/black"
+                android:text="Add New\nStudents"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorLink="#FFFFFF" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/editStudentBtn"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_bg"
+                android:elevation="20dp"
+                android:shadowColor="@android:color/black"
+                android:text="Edit Cover\nSlide"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorLink="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/CE"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_bg"
+                android:elevation="20dp"
+                android:shadowColor="@android:color/black"
+                android:text="Cultural\nEvents"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorLink="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/SE"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_bg"
+                android:elevation="20dp"
+                android:shadowColor="@android:color/black"
+                android:text="Sports\nEvents"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorLink="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/AE"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_bg"
+                android:elevation="20dp"
+                android:shadowColor="@android:color/black"
+                android:text="Academics\nEvents"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorLink="#FFFFFF" />
+
+        </GridLayout>
+    </ScrollView>
+
+</RelativeLayout>

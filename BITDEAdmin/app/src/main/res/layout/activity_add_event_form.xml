@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEventForm"
+    android:padding="20dp">
+
+
+    <View
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/S1"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="#FFF"
+            android:text="1"
+            android:background="@drawable/rectangle_aktif"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/s2"
+            android:text="2"
+            android:background="@drawable/rectangle_non"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:id="@+id/S3"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimary"
+            android:text="3"
+            android:background="@drawable/rectangle_non"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    </RelativeLayout>
+
+    <!--======================page1========================-->
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/linerlayout1"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/layoutStatus"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Choose Event Category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:padding="16dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_event_category"/>
+
+
+        <TextView
+
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/add_event_title"
+            android:layout_marginTop="5dp"
+            android:padding="16dp"
+            android:hint="Enter Event Title"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/add_event_description"
+            android:inputType="textLongMessage"
+            android:layout_marginTop="5dp"
+            android:padding="16dp"
+            android:hint="Description"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" />
+
+
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Seclect Date And Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seclectDate"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:padding="16dp"
+                android:text="Seclect Date"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/seletTime"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:text="select Time"
+                android:padding="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/rectangle_aktif"
+        android:textColor="#FFF"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:text="Continue"
+        android:id="@+id/contiu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--========================page2==================-->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linerlayout2"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/layoutStatus"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Organise By"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/add_event_organisation"
+            android:layout_marginTop="5dp"
+            android:padding="16dp"
+            android:hint="Organisation"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Open For"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/add_event_openFor"
+            android:layout_marginTop="5dp"
+            android:padding="16dp"
+            android:hint="Branch and Semester"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/add_event_guest"
+            android:layout_marginTop="5dp"
+            android:padding="16dp"
+            android:hint="Guest"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:background="@drawable/rectangle_aktif"
+        android:textColor="#FFF"
+        android:visibility="gone"
+        android:layout_marginTop="195dp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:text="Continue"
+        android:id="@+id/contiu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!--    ===================page3================-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout3">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/ic_baseline_image_24"
+            android:background="@drawable/border"
+            android:id="@+id/event_image"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Select Image"
+            android:textSize="25dp"
+            android:layout_below="@+id/event_image"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/rectangle_aktif"
+            android:textColor="#FFF"
+            android:visibility="gone"
+            android:layout_marginTop="195dp"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:text="Done"
+            android:id="@+id/contiu3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
